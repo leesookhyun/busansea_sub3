@@ -1,0 +1,10 @@
+$(function(){
+    $('.nav>ul>li').mouseenter(function(){
+        $(this).children('.sub').stop().slideDown();
+        $(this).addClass('active');
+    });
+    $('.nav>ul>li').mouseleave(function(){
+        $(this).children('.sub').stop().slideUp();
+        $(this).removeClass('active');
+    });
+});
